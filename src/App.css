@@ -1,0 +1,168 @@
+textarea:active,
+textarea:focus{
+    outline: 0px !important;
+    -webkit-appearance: none;
+}
+
+.myEditor-containerDiv{
+width: 750px;
+display: flex;
+flex-direction: column;
+-webkit-box-shadow: 0 0 20px gray;
+box-shadow: 0 0 20px gray;
+border:1px solid gray;
+margin-top: 30px;
+}
+
+.myEditor-containerDiv2{
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px gray;
+  border:1px solid gray;
+  margin-top: 30px;
+}
+
+
+i{
+  font-size: 18pt;
+}
+i:hover{
+  color:lightgreen;
+}
+
+.editor{
+  overflow-y: auto;
+  min-height: 250px;
+  min-width:100%;
+  max-width:100%;
+  background-color: #c0d8d8;
+  border:1px solid gray;
+  border-right:none;
+  border-top:none;
+  padding:10px 8px 10px 8px;
+  font-family: monospace;
+  font-size: 15px;
+  color:black;
+}
+
+.editor2{
+  overflow-y: auto;
+  min-height: 95vh;
+  min-width:90%;
+  max-width:100%;
+  background-color: #c0d8d8;
+  border:1px solid gray;
+  border-right:none;
+  border-top:none;
+  padding:10px 8px 10px 8px;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+}
+
+.kingDiv{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #b2d8d8;
+  align-items: center ;
+}
+
+.my-header{
+  width:100%;
+  height: 35px;
+  background-color: #4aa3a3;
+  border:1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: Russo one;
+  color: black;
+}
+
+.p-editor{
+vertical-align:0pt;
+}
+
+.preview-container{
+  margin-top: 23px;
+  width:1030px;
+  min-height: 250px;
+  -webkit-box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px gray;
+  border:1px solid gray; 
+}
+
+.preview-container2{
+  margin-top: 23px;
+  width:1200px;
+  min-height: 95vh;
+  -webkit-box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px gray;
+  border:1px solid gray; 
+}
+
+
+.preview-header{
+  width:100%;
+  height: 35px;
+  background-color: #4aa3a3;
+  border:1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: Russo one;
+  color: black;
+}
+
+.preview{
+  background-color: #c0d8d8;
+  width: 100%;
+  min-height:inherit;
+  margin-top:0px;
+  border:1px solid gray;
+  padding:10px 8px 10px 8px;
+}
+.preview2{
+  background-color: #c0d8d8;
+  width: 100%;
+  min-height:95vh;
+  margin-top:0px;
+  border:1px solid gray;
+  padding:10px 8px 10px 8px;
+}
+
+@media screen and (max-width: 850px){
+  .myEditor-containerDiv {
+    width:450px;
+}
+
+  .my-header,.editor{
+    min-width:100%;
+    max-width:100%;
+  }
+
+  .preview-container{
+    max-width:600px;
+  }
+  .preview-header,.preview{
+    width:100%;
+  }
+
+  .myEditor-containerDiv2,.preview-container2{
+    width:600px;
+  }
+
+  
+}
